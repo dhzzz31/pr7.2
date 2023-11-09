@@ -36,7 +36,7 @@ namespace Lab_7._2
                 // Если файл существует, удаляем его
                 File.Delete(fileName);
             }
-            // Создаем новый файл с заданным именем и размером буфера 1024 байта
+            // Создаем новый файл с заданным именем и размером буфера 1024 байт
             using (FileStream fs = File.Create(fileName, 1024))
             using(BinaryWriter bw = new BinaryWriter(fs))
             {
